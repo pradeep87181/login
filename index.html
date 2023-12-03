@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('nature.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .card{
+            width:400px;
+            height:400px;
+            /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 60px;
+            border-radius: 5px;
+
+        }
+        h4{
+            color:white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size:30px;
+            margin-bottom: 20px;
+        }
+        .input{
+            width: 100%;
+            height:45px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .input input{
+            width: 100%;
+            height:45px;
+            border:none;
+            outline:none;
+            margin-bottom: 30px;
+            background-color: #577710;
+            border-radius: 20px;
+            color:#fff;
+        }
+        .input .i1{
+            padding-left: 70px;
+        }
+        .input .i2{
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+        .input input::placeholder{
+            color:#fff;
+        }
+        .input .circle{
+            width:60px;
+            height:60px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            top:-8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:30px;
+            color:#00292d;
+        }
+        .input .circle1{
+            left:0;
+        }
+        .input .circle2{
+            right:0;
+        }
+        button{
+            margin-top: 10px;
+            width:100%;
+            height:50px;
+            background-color: white;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color:#00292d;
+            font-size:20px;
+            border:none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover{
+            background: transparent;
+            border:1px solid white;
+            color:white;
+        }
+    </style>
+    <div class="card">
+        <h4>user login</h4>
+        <div class="input">
+            <div class="circle circle1">
+                <iconify-icon icon="ph:user-bold"></iconify-icon>
+            </div>
+            <input type="text" placeholder="Username" class="i1">
+        <div>
+        <div class="input">
+            <div class="circle circle2">
+                <iconify-icon icon="material-symbols-light:lock-sharp"></iconify-icon>
+            </div>
+            <input type="password" placeholder="Password" class="i2">
+        <div>
+        <button>login</button>
+    </div>
+</body>
+</html>
